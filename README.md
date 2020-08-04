@@ -21,8 +21,8 @@ TTkGameSDK is available through [CocoaPods](https://cocoapods.org).
 ```objc
 pod 'TTkGameSDK'
 ```
-Doucument : [TTkGameSDK Installation (iOS).pdf]()
+Doucument : [TTkGameSDK Installation (iOS).pdf](https://github.com/AmuseGames/GameSDK-iOS/blob/master/Documents/TTkGameSDK/TTkGameSDK%20Installation%20(iOS).pdf)
 
 **Api**
 
-Doucument : [TTkGameSDK API Document (iOS).pdf]()
+Doucument : [TTkGameSDK API Document (iOS).pdf](https://github.com/AmuseGames/GameSDK-iOS/blob/master/Documents/TTkGameSDK/TTkGameSDK%20API%20Document%20(iOS).pdf)
