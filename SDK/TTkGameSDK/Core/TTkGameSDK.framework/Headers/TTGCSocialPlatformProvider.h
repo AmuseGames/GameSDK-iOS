@@ -123,6 +123,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (void)ttgcLog_eventPaymentInfoValue:(NSNumber *)value currency:(NSString *)currency payType:(NSString *)type;
 
+#pragma mark - AppsFlyer unique
+
+- (void)ttgcTraker_event:(NSString *)eventName withValues:(NSDictionary * _Nullable)values;
+
 
 @end
 
