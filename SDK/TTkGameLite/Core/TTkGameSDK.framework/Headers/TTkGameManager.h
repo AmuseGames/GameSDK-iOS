@@ -232,6 +232,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (NSString *)SDKServerDomain;
 
+/**
+ Set whether to start apns
+ */
+- (void)setupApns:(BOOL)set;
+
 #pragma - Log Information
 /**
  Log information output. open & close
@@ -263,8 +268,18 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)openAppStoreWithStoreIdentifier:(NSString *)identifier;
 
 #pragma mark - Universal Link
+
 - (BOOL)application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
 
+#pragma mark - af track
+
+/**
+Track
+
+@param event track event type (TTGCTrackEvent)
+@param values event params
+*/
+- (void)tracker_event:(TTGCTrackEvent)event withValues:(NSDictionary * _Nullable)values;
 
 @end
 

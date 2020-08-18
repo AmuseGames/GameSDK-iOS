@@ -28,6 +28,39 @@ typedef NS_ENUM(NSInteger, TTGCOderStatus) {
     TTGCOrderStatus_ReceiptChecking          = 5, // order verifying
 };
 
+/**
+ *  track event enum
+ */
+typedef NS_ENUM(NSInteger, TTGCTrackEvent) {
+    TTGCTrackEvent_Activity          = 1,  // activity event
+    TTGCTrackEvent_Guide             = 2,  // guide event
+    TTGCTrackEvent_GuideCompletion   = 3,  // guide completion
+    TTGCTrackEvent_Reward            = 4,  // reward event
+    TTGCTrackEvent_Rank              = 5,  // rank event
+    TTGCTrackEvent_VipInfo           = 6,  // vip info event
+    TTGCTrackEvent_AdClick           = 7,  // ad click event
+    TTGCTrackEvent_Launch            = 8,  // ad launch event
+    TTGCTrackEvent_Login             = 9,  // ad login event
+    TTGCTrackEvent_Purchase          = 10, // ad purchase event
+    TTGCTrackEvent_Other             = 11, // other event
+};
+
+/**
+ *  track event param keys
+ */
+#define TTGCTrackParamLaunchFirst            @"af_launch_first"
+#define TTGCTrackParamUserUid                @"af_user_uid"
+#define TTGCTrackParamUserType               @"af_user_type"
+#define TTGCTrackParamActivityId             @"af_activity_id"
+#define TTGCTrackParamActivityAction         @"af_activity_action"
+
+#define TTGCTrackParamGuideId                @"af_tutorial_id"
+#define TTGCTrackParamGuideSuccess           @"af_success"
+#define TTGCTrackParamGuideDetail            @"af_tutorial_detail"
+
+#define TTGCTrackParamRewardId               @"af_reward_id"
+#define TTGCTrackParamUserVip                @"af_user_vip"
+#define TTGCTrackParamAdId                   @"af_ad_id"
 
 
 /**
