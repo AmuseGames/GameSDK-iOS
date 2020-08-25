@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TTkGameSDK"
-  spec.version      = "1.1.11"
+  spec.version      = "1.1.12"
   spec.summary      = "TTkGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "1.1.11" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "1.1.12" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }

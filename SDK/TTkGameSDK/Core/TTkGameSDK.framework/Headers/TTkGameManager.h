@@ -61,6 +61,9 @@ NS_ASSUME_NONNULL_BEGIN
 */
 - (BOOL)botimIsInstall;
 
+//login
+- (void)loginWithTTkCompletion:(TTGCUserCompletionHandler)completion;
+
 /**
  Apple Login
  
@@ -156,6 +159,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)openSystemPhotoCompletion:(TTGCSocialSystemPhotoCompletionHandler)completion;
 
 /**
+*  share message
+*
+*  @param message  share content type @see TTGCSocialTTkInvite & TTGCSocialTTkNotice
+*  @param completion   callback
+*/
+- (void)sendToMessageTottk:(id)message Completion:(TTGCShareCompleteHandler)completion;
+
+/**
 *  botim share
 *
 *  @param message  share content type @see TTGCSocialBimMessage
@@ -207,6 +218,23 @@ NS_ASSUME_NONNULL_BEGIN
  Open system notification settings page
  */
 - (void)systemNotificationSetting;
+
+#pragma mark - TTk消息
+
+/**
+Get friends list from server
+
+@param completion friends list callback
+*/
+- (void)getFriendsFromServerCompletion:(TTGCTTkFriendsCompletionHandler)completion;
+
+/**
+Get playing friends list from server
+
+@param completion friends list callback
+*/
+- (void)getPlayingFriendsFromServerCompletion:(TTGCTTkFriendsCompletionHandler)completion;
+
 
 #pragma mark - Botim
 
@@ -324,6 +352,13 @@ Track
 @param values event params
 */
 - (void)tracker_event:(TTGCTrackEvent)event withValues:(NSDictionary * _Nullable)values;
+
+/**
+ Contact us
+ 
+ Contact us with messenger app.
+*/
+- (void)contactusWithMessenger;
 
 @end
 
