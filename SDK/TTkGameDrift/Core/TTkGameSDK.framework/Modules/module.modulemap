@@ -1,0 +1,6 @@
+framework module TTkGameSDK {
+  umbrella header "TTkGameSDK.h"
+
+  export *
+  module * { export * }
+}
