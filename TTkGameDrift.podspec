@@ -60,7 +60,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'AppsFlyer' do |af|
       af.source_files = 'SDK/TTkGameDrift/SocialLibraries/TTGCAppsFlyer'
       af.vendored_library = 'SDK/TTkGameDrift/SocialLibraries/TTGCAppsFlyer/libTTGCAppsFlyer.a'
-      af.dependency 'AppsFlyerFramework'
+      af.dependency 'AppsFlyerFramework', '~> 5.4.0'
       af.dependency 'TTkGameDrift/Core'
   end
   

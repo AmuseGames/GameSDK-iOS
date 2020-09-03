@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TTkGameLite-Dynamic"
-  spec.version      = "1.0.5"
+  spec.version      = "1.0.6"
   spec.summary      = "TTkGame SDK for games"
   
   spec.description  = <<-DESC
@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "TTkGameLite-Dynamic-1.0.5" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "TTkGameLite-Dynamic-1.0.6" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -40,7 +40,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'AppsFlyer' do |af|
       af.source_files = 'SDK/TTkGameLite-Dynamic/SocialLibraries/TTGCAppsFlyer'
       af.vendored_library = 'SDK/TTkGameLite-Dynamic/SocialLibraries/TTGCAppsFlyer/libTTGCAppsFlyer.a'
-      af.dependency 'AppsFlyerFramework'
+      af.dependency 'AppsFlyerFramework', '~> 5.4.0'
       af.dependency 'TTkGameLite-Dynamic/Core'
   end
   
