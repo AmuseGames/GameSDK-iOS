@@ -45,7 +45,7 @@ Pod::Spec.new do |spec|
   spec.subspec 'Twitter' do |tt|
       tt.source_files = 'SDK/TTkGameSDK/SocialLibraries/TTGCSocialTwitter'
       tt.vendored_library = 'SDK/TTkGameSDK/SocialLibraries/TTGCSocialTwitter/libTTGCSocialTwitter.a'
-      tt.dependency 'TwitterKit5'
+      tt.dependency 'TwitterKit5', '~> 5.2.0'
       tt.dependency 'TTkGameSDK/Core'
   end
   

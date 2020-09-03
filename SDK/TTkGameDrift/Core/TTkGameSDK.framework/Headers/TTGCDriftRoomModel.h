@@ -12,8 +12,6 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface TTGCDriftRoomModel : NSObject
 
-@property (nonatomic, assign) BOOL over;
-
 @property (nonatomic, copy) NSString *roomId;
 @property (nonatomic, copy) NSString *createTime;
 @property (nonatomic, copy) NSString *homeowner;

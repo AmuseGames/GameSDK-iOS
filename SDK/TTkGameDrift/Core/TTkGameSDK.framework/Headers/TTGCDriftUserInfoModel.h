@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface TTGCDriftUserInfoModel : NSObject
 
 @property (nonatomic, copy) NSString *userId;
+@property (nonatomic, copy) NSString *thirdUid;
 @property (nonatomic, copy) NSString *usedCar;
 @property (nonatomic, copy) NSString *photoUrl;
 @property (nonatomic, copy) NSString *nickName;

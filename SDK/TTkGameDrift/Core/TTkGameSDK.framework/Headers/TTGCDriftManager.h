@@ -85,7 +85,7 @@ typedef void (^TTGCDriftRoomCompletionHandler)(id _Nullable room, NSError *_Null
 /**
  *  Room List callback
  *
- *  @param room room info list
+ *  @param roomList room info list
  *  @param error error message
  */
 typedef void (^TTGCDriftRoomListCompletionHandler)(id _Nullable roomList, NSError *_Nullable error);
