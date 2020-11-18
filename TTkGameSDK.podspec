@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TTkGameSDK"
-  spec.version      = "1.1.14"
+  spec.version      = "1.1.15"
   spec.summary      = "TTkGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "1.1.14" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "1.1.15" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -36,9 +36,9 @@ Pod::Spec.new do |spec|
   spec.subspec 'Facebook' do |fb|
       fb.source_files = 'SDK/TTkGameSDK/SocialLibraries/Facebook'
       fb.vendored_library = 'SDK/TTkGameSDK/SocialLibraries/Facebook/libTTGCSocialFacebook.a'
-      fb.dependency 'FBSDKCoreKit', '~> 6.5.1'
-      fb.dependency 'FBSDKLoginKit', '~> 6.5.1'
-      fb.dependency 'FBSDKShareKit', '~> 6.5.1'
+      fb.dependency 'FBSDKCoreKit'
+      fb.dependency 'FBSDKLoginKit'
+      fb.dependency 'FBSDKShareKit'
       fb.dependency 'TTkGameSDK/Core'
   end
   
