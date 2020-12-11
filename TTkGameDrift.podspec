@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "TTkGameDrift"
-  spec.version      = "1.1.15"
+  spec.version      = "1.1.16"
   spec.summary      = "TTkGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "Drift-1.1.15" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "Drift-1.1.16" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }

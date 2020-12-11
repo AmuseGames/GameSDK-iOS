@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-#import "TTGCDriftUserInfoModel.h"
-#import "TTGCDriftRoomModel.h"
-#import "TTGCDriftFriendsModel.h"
+#import <TTkGameSDK/TTGCDriftUserInfoModel.h>
+#import <TTkGameSDK/TTGCDriftRoomModel.h>
+#import <TTkGameSDK/TTGCDriftFriendsModel.h>
 
-#import "TTGCDriftFriendsRankModel.h"
-#import "TTGCDriftAllRankModel.h"
+#import <TTkGameSDK/TTGCDriftFriendsRankModel.h>
+#import <TTkGameSDK/TTGCDriftAllRankModel.h>
 
 
 NS_ASSUME_NONNULL_BEGIN
@@ -103,7 +103,7 @@ typedef void (^TTGCDriftRoomListCompletionHandler)(id _Nullable roomList, NSErro
 + (instancetype)defaultManager;
 
 
-- (void)uploadCarInfo:(NSString *)car completion:(TTGCDriftUploadCompletionHandler)completion;
+- (void)uploadCarInfo:(NSString *)car withRoomID:(NSString *)roomid completion:(TTGCDriftUploadCompletionHandler)completion;
 
 - (void)getUserInfo:(TTGCDriftUserInfoCompletionHandler)completion;
 

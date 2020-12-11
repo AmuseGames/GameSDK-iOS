@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TTGCUserModel.h"
-#import "TTGCFriendModel.h"
-#import "TTGCPlayingFriendModel.h"
-#import "TTGCOrderModel.h"
-#import "TTGCSocialMessageObject.h"
-#import "TTGCAppVersionModel.h"
+#import <TTkGameSDK/TTGCUserModel.h>
+#import <TTkGameSDK/TTGCFriendModel.h>
+#import <TTkGameSDK/TTGCPlayingFriendModel.h>
+#import <TTkGameSDK/TTGCOrderModel.h>
+#import <TTkGameSDK/TTGCSocialMessageObject.h>
+#import <TTkGameSDK/TTGCAppVersionModel.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
