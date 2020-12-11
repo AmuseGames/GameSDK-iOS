@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TTGCConfig.h"
+#import <TTkGameSDK/TTGCConfig.h>
 
 
 NS_ASSUME_NONNULL_BEGIN

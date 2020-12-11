@@ -8,7 +8,7 @@
 
 #define MAXFLOAT    0x1.fffffep+127f
 
-#import "TTGCProgressHUD.h"
+#import <TTkGameSDK/TTGCProgressHUD.h>
 
 #pragma mark - TTGCProgressHUD
 
