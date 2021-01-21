@@ -264,13 +264,23 @@ Get playing friends list from server
 - (void)getProductDetailWithSKU:(NSString *)sku Completion:(TTGCProductCompletionHandler)completion;
 
 /**
- Purchase
+ Purchase (The following new method with name parameter is recommended.)
  
  @param sku goods ID
  @param progress Purchase process callback
  @param completion Purchase completion callback
  */
 - (void)buyProductWithSKU:(NSString *)sku Progress:(TTGCOrderProgressHandler)progress Completion:(TTGCOrderCompletionHandler)completion;
+
+/**
+ Purchase (recommended)
+ 
+ @param sku goods ID
+ @param name goods name
+ @param progress Purchase process callback
+ @param completion Purchase completion callback
+ */
+- (void)buyProductWithSKU:(NSString *)sku WithName:(NSString *)name Progress:(TTGCOrderProgressHandler)progress Completion:(TTGCOrderCompletionHandler)completion;
 
 /**
  Checking Order
