@@ -1,0 +1,6 @@
+framework module AmuseGameSDK {
+  umbrella header "AmuseGameSDK.h"
+
+  export *
+  module * { export * }
+}
