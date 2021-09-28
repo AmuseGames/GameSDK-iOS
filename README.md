@@ -1,4 +1,4 @@
-# TTkGameSDK
+# AmuseGameSDK
 
 **Function**
 
@@ -16,13 +16,13 @@
 
 **Installation**
 
-TTkGameSDK is available through [CocoaPods](https://cocoapods.org).
+AmuseGameSDK is available through [CocoaPods](https://cocoapods.org).
 
 ```objc
-pod 'TTkGameSDK'
+pod 'AmuseGameSDK'
 ```
-Doucument : [TTkGameSDK Installation (iOS).pdf](https://github.com/AmuseGames/GameSDK-iOS/blob/master/Documents/TTkGameSDK/TTkGameSDK%20Installation%20(iOS).pdf)
+Doucument : [AmuseGameSDK Installation (iOS).pdf](https://github.com/AmuseGames/GameSDK-iOS/blob/master/Documents/AmuseGameSDK/AmuseGameSDK%20Installation(iOS).pdf)
 
 **Api**
 
-Doucument : [TTkGameSDK API Document (iOS).pdf](https://github.com/AmuseGames/GameSDK-iOS/blob/master/Documents/TTkGameSDK/TTkGameSDK%20API%20Document%20(iOS).pdf)
+Doucument : [AmuseGameSDK API Document (iOS).pdf](https://github.com/AmuseGames/GameSDK-iOS/blob/master/Documents/AmuseGameSDK/AmuseGameSDK%20API%20Document(iOS).pdf)
