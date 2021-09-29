@@ -86,6 +86,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)loginWithFacebookCompletion:(TTGCUserCompletionHandler)completion;
 
 /**
+ Google Login
+ 
+ @param completion login callback
+ */
+- (void)loginWithGoogleCompletion:(TTGCUserCompletionHandler)completion;
+
+/**
  Twitter Login
  
  @param completion login callback
@@ -371,6 +378,14 @@ Track
 @param values event params
 */
 - (void)tracker_event:(TTGCTrackEvent)event withValues:(NSDictionary * _Nullable)values;
+
+/**
+Track
+
+@param event track event name (NSString)
+@param values event params
+*/
+- (void)tracker_eventName:(NSString *)event withValues:(NSDictionary * _Nullable)values;
 
 /**
  Contact us
