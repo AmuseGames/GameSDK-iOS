@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AmuseGameSDK"
-  spec.version      = "2.0.0"
+  spec.version      = "2.0.1"
   spec.summary      = "AmuseGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.0.0" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.0.1" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
