@@ -54,6 +54,8 @@ Pod::Spec.new do |spec|
       analy.vendored_library = 'SDK/AmuseGameSDK/SocialLibraries/TTGCAnalytics/libTTGCAnalytics.a'
       analy.dependency 'Firebase/Analytics'
       analy.dependency 'Firebase/DynamicLinks'
+      analy.dependency 'Firebase/Auth'
+      analy.dependency 'GoogleSignIn'
       analy.dependency 'AmuseGameSDK/Core'
   end
   
