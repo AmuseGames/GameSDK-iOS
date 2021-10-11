@@ -299,6 +299,16 @@ Get playing friends list from server
 - (void)xslBuyProductWithSKU:(NSString *)sku Currency:(NSString *)currency Completion:(TTGCOrderCompletionHandler)completion;
 
 /**
+ Purchase (Selector)
+ 
+ @param sku goods ID
+ @param name goods name
+ @param currency pay currency
+ @param completion Purchase completion callback
+ */
+- (void)selectPayWithProductSKU:(NSString *)sku Name:(NSString *)name Currency:(NSString *)currency Completion:(TTGCOrderCompletionHandler)completion;
+
+/**
  Checking Order
  
  @param orderID order id
