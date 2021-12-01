@@ -23,7 +23,6 @@ NS_ASSUME_NONNULL_BEGIN
 *
 *  1.+(NSArray*) socialPlatformTypes;
 *  Returns an array of corresponding platform types.
-*  The array is used here to allow different platform types (WeChat, etc.) to be shared with the unified handler on WeChat and qq platforms.
 *
 *  2.Rewrite the load function:
 *  Example code:

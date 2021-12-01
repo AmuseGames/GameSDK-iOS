@@ -306,7 +306,7 @@ Get playing friends list from server
  @param currency pay currency
  @param completion Purchase completion callback
  */
-- (void)selectPayWithProductSKU:(NSString *)sku Name:(NSString *)name Currency:(NSString *)currency Completion:(TTGCOrderCompletionHandler)completion;
+- (void)selectBWithProductSKU:(NSString *)sku Name:(NSString *)name Currency:(NSString *)currency Completion:(TTGCOrderCompletionHandler)completion;
 
 /**
  Checking Order
