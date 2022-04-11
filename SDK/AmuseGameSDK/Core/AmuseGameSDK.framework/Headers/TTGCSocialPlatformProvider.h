@@ -21,7 +21,7 @@ NS_ASSUME_NONNULL_BEGIN
  *
  *  @param launchOptions       AppKey for third-party platforms
  */
-- (BOOL)ttgcSocial_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
+- (BOOL)sosaSocial_application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions;
 
 /**
  *  Setting platform appkey
@@ -30,7 +30,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param appSecret    appSecret for third-party platforms
  *  @param redirectURL  redirectURL
  */
-- (BOOL)ttgcSocial_setAppKey:(NSString *)appKey
+- (BOOL)sosaSocial_setAppKey:(NSString *)appKey
                    appSecret:(NSString *)appSecret
                  redirectURL:(NSString *)redirectURL;
 
@@ -41,7 +41,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param completionHandler Callback after authorization
  *  @discuss userInfo        In some platforms it can be brought in, if not it passes into nil.
  */
--(void)ttgcSocial_AuthorizeWithUserInfo:(NSDictionary *)userInfo
+-(void)sosaSocial_AuthorizeWithUserInfo:(NSDictionary *)userInfo
                 withCompletionHandler:(TTGCSocialPlateLoginCompletionHandler)completionHandler;
 
 /**
@@ -50,7 +50,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param completionHandler Callback after deauthorization
  *  @discuss userInfo        In some platforms it can be brought in, if not it passes into nil.
  */
--(void)ttgcSocial_cancelAuthWithCompletionHandler:(TTGCSocialPlateLogoutCompletionHandler)completionHandler;
+-(void)sosaSocial_cancelAuthWithCompletionHandler:(TTGCSocialPlateLogoutCompletionHandler)completionHandler;
 
 
 /**
@@ -59,7 +59,7 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param messageObject  share content @see TTGCMessageObject
  *  @param completion     callback
  */
-- (void)ttgcSocial_shareMessageObject:(TTGCSocialMessageObject *)messageObject
+- (void)sosaSocial_shareMessageObject:(TTGCSocialMessageObject *)messageObject
                            completion:(TTGCShareCompleteHandler)completion;
 
 
@@ -73,35 +73,35 @@ NS_ASSUME_NONNULL_BEGIN
  *  @return  YES Success，NO Not deal with
  *
  */
-- (BOOL)ttgcSocial_application:(UIApplication *)application OpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
-- (BOOL)ttgcSocial_application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
+- (BOOL)sosaSocial_application:(UIApplication *)application OpenURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation;
+- (BOOL)sosaSocial_application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
 
 //General (standby)
-- (BOOL)ttgcSocial_handleOpenURL:(NSURL *)url options:(NSDictionary*)options;
+- (BOOL)sosaSocial_handleOpenURL:(NSURL *)url options:(NSDictionary*)options;
 
 #pragma mark - Universal Link
-- (BOOL)ttgc_application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
+- (BOOL)sosa_application:(UIApplication *)application continueUserActivity:(NSUserActivity *)userActivity restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> * _Nullable))restorationHandler;
 
 /**
  *  Platform installed or not
  *
  *  @return YES installed，NO uninstalled
  */
-- (BOOL)ttgcSocial_isInstall;
+- (BOOL)sosaSocial_isInstall;
 
 /**
  *  Current platform support sharing
  *
  *  @return YES support，NO unsupported
  */
-- (BOOL)ttgcSocial_isSupport;
+- (BOOL)sosaSocial_isSupport;
 
 /**
  *  Whether the platform token is valid
  *
  *  @return YES valid，NO invalid
 */
-- (BOOL)ttgcSocial_isCurrentAccessTokenActive;
+- (BOOL)sosaSocial_isCurrentAccessTokenActive;
 
 #pragma mark - Facebook unique
 /**
@@ -111,21 +111,21 @@ NS_ASSUME_NONNULL_BEGIN
  *  @param completion     callback
  *
 */
-- (void)ttgcSocial_showFBFriendsSendInvitations:(TTGCSocialMessageObject *)messageObject
+- (void)sosaSocial_showFBFriendsSendInvitations:(TTGCSocialMessageObject *)messageObject
                                      completion:(TTGCShareCompleteHandler)completion;
 
 #pragma mark - GA unique
 
-- (void)ttgcLog_eventShareWithTarget:(NSString *)target shareType:(NSString *)type;
+- (void)sosaLog_eventShareWithTarget:(NSString *)target shareType:(NSString *)type;
 
-- (void)ttgcLog_eventLogin;
-- (void)ttgc_setAnalyticsUser;
+- (void)sosaLog_eventLogin;
+- (void)sosa_setAnalyticsUser;
 
-- (void)ttgcLog_eventPaymentInfoValue:(NSNumber *)value currency:(NSString *)currency payType:(NSString *)type;
+- (void)sosaLog_eventPInfoValue:(NSNumber *)value currency:(NSString *)currency type:(NSString *)type;
 
 #pragma mark - AppsFlyer unique
 
-- (void)ttgcTraker_event:(NSString *)eventName withValues:(NSDictionary * _Nullable)values;
+- (void)sosaTraker_event:(NSString *)eventName withValues:(NSDictionary * _Nullable)values;
 
 
 @end

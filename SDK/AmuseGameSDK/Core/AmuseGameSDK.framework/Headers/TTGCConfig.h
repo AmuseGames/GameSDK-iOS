@@ -22,9 +22,10 @@ NS_ASSUME_NONNULL_BEGIN
 typedef NS_ENUM(NSInteger, TTGCOderStatus) {
     TTGCOrderStatus_ProductQuerying          = 1, // order querying
     TTGCOrderStatus_Generating               = 2, // order init
-    TTGCOrderStatus_ProductPurchasing        = 3, // order in trading progress
-    TTGCOrderStatus_ProductPurchased         = 4, // order purchased
-    TTGCOrderStatus_ReceiptChecking          = 5, // order verifying
+    TTGCOrderStatus_Generated                = 3, // order init success
+    TTGCOrderStatus_ProductPurchasing        = 4, // order in trading progress
+    TTGCOrderStatus_ProductPurchased         = 5, // order purchased
+    TTGCOrderStatus_ReceiptChecking          = 6, // order verifying
 };
 
 /**
@@ -43,6 +44,8 @@ typedef NS_ENUM(NSInteger, TTGCTrackEvent) {
     TTGCTrackEvent_Purchase          = 10, // ad purchase event
     TTGCTrackEvent_Other             = 11, // other event
 };
+
+#define TTGCNotificationOrderCallBack        @"sosa_notification_order_callback"
 
 /**
  *  track event param keys

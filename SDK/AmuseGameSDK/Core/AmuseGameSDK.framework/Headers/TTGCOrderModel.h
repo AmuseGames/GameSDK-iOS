@@ -15,9 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) NSString *orderId; //order id
 @property (nonatomic, copy) NSString *orderRef; //pay-third orderid
+@property (nonatomic, copy) NSString *cpOrderId; //cp orderid
 
-@property (nonatomic, copy) NSString *channel; //pay channel  0: apple，1: google, 2: ttk
-@property (nonatomic, copy) NSString *env; //pay environment  0: sandbox，1: production
+@property (nonatomic, copy) NSString *channel; //channel
+@property (nonatomic, copy) NSString *env; //pay env  0: sandbox，1: production
 @property (nonatomic, copy) NSString *sku;
 @property (nonatomic, copy) NSString *amount;
 

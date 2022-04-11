@@ -32,6 +32,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)launchAnimationCompletion:(TTGCLaunchCompletion)completion;
 
+/**
+ Initialization of apns
+ */
+- (void)setupAPNS;
+
 #pragma mark - Login
 
 /**
@@ -290,7 +295,6 @@ Get playing friends list from server
 - (void)buyProductWithSKU:(NSString *)sku WithName:(NSString *)name Progress:(TTGCOrderProgressHandler)progress Completion:(TTGCOrderCompletionHandler)completion;
 
 /**
- Purchase (xsl-pay)
  
  @param sku goods ID
  @param currency pay currency
@@ -307,6 +311,25 @@ Get playing friends list from server
  @param completion Purchase completion callback
  */
 - (void)selectBWithProductSKU:(NSString *)sku Name:(NSString *)name Currency:(NSString *)currency Completion:(TTGCOrderCompletionHandler)completion;
+
+/**
+ Purchase (Selector)
+ 
+ @param sku goods ID
+ @param name goods name
+ @param currency pay currency
+ @param gameOrder game order ID
+ @param progress Purchase process callback
+ @param completion Purchase completion callback
+ */
+- (void)selectBWithProductSKU:(NSString *)sku
+                         Name:(NSString *)name
+                     Currency:(NSString *)currency
+                    GameOrder:(NSString *)gameOrder
+                     Progress:(TTGCOrderProgressHandler)progress
+                   Completion:(TTGCOrderCompletionHandler)completion;
+
+- (NSString *)getCurrentOrderID;
 
 /**
  Checking Order
@@ -352,13 +375,13 @@ Get playing friends list from server
 - (void)openLogInfo;
 - (void)closeLogInfo;
 
-#pragma - Payment Environment
+#pragma - Environment
 /**
- Switch payment environment
+ set env
  */
-- (void)setPayEnvironmentTest;//test environment
-- (void)setPayEnvironmentProduction;//production environment
-- (int)getPayEnvironment;//1 production   2 test
+- (void)setPEnvTest;//test environment
+- (void)setPEnvProduction;//production environment
+- (int)getPEnv;//1 production   2 test
 
 #pragma mark - App Update
 /**
