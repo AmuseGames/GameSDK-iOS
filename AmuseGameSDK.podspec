@@ -15,8 +15,8 @@ Pod::Spec.new do |spec|
 
   spec.author             = "AmuseGames Team"
   
-  spec.platform     = :ios, "9.0"
-  spec.ios.deployment_target = "9.0"
+  spec.platform     = :ios, "11.0"
+  spec.ios.deployment_target = "11.0"
   
   spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.2.3.1" }
 
