@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AmuseGameSDK"
-  spec.version      = "2.2.3"
+  spec.version      = "2.2.3.1"
   spec.summary      = "AmuseGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "9.0"
   spec.ios.deployment_target = "9.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.2.3" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.2.3.1" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -36,9 +36,9 @@ Pod::Spec.new do |spec|
   spec.subspec 'Facebook' do |fb|
       fb.source_files = 'SDK/AmuseGameSDK/SocialLibraries/Facebook'
       fb.vendored_library = 'SDK/AmuseGameSDK/SocialLibraries/Facebook/libTTGCSocialFacebook.a'
-      fb.dependency 'FBSDKCoreKit'
-      fb.dependency 'FBSDKLoginKit'
-      fb.dependency 'FBSDKShareKit'
+      fb.dependency 'FBSDKCoreKit', '~> 12.3.2'
+      fb.dependency 'FBSDKLoginKit', '~> 12.3.2'
+      fb.dependency 'FBSDKShareKit', '~> 12.3.2'
       fb.dependency 'AmuseGameSDK/Core'
   end
   
