@@ -131,6 +131,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)logout:(TTGCLogoutCompleteHandler)completion;
 
 /**
+ Get Mig Code
+ 
+ @param completion migCode
+ */
+- (void)getMigCode:(TTGCCompletionHandler)completion;
+
+/**
  Notification of account being kicked out
  
  @param handler notification information
@@ -350,6 +357,16 @@ Get playing friends list from server
  Open Agreement View
  */
 - (void)showAgreementView;
+
+/**
+ Open Mig View
+ */
+- (void)showMigView;
+
+/**
+ setup mig code
+ */
+- (void)setupMigCode:(NSString *)code;
 
 
 #pragma mark - SDK Configuration
