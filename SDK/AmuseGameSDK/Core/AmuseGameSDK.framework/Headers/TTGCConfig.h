@@ -45,7 +45,7 @@ typedef NS_ENUM(NSInteger, TTGCTrackEvent) {
     TTGCTrackEvent_Other             = 11, // other event
 };
 
-#define TTGCNotificationOrderCallBack        @"sosa_notification_order_callback"
+#define TTGCNotificationOrderCallBack        @"toirdateo_notification_order_callback"
 
 /**
  *  track event param keys
@@ -135,6 +135,14 @@ typedef void (^TTGCSocialSystemPhotoCompletionHandler)(id _Nullable mediaInfo, N
  *  @param error error message
  */
 typedef void (^TTGCLogoutCompleteHandler)(BOOL success, NSError *_Nullable error);
+
+/**
+ *  Delete account callback
+ *
+ *  @param success <BOOL>
+ *  @param error error message
+ */
+typedef void (^TTGCDeleteCompleteHandler)(BOOL success, NSError *_Nullable error);
 
 /**
  *  Account Kicked Notification

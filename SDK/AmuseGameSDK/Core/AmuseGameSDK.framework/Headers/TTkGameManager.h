@@ -131,6 +131,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)logout:(TTGCLogoutCompleteHandler)completion;
 
 /**
+ Delete Account
+ 
+ @param completion delete reult
+ */
+- (void)deleteAccount:(TTGCDeleteCompleteHandler)completion;
+
+/**
  Get Mig Code
  
  @param completion migCode
