@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AmuseGameSDK"
-  spec.version      = "2.2.5"
+  spec.version      = "2.2.6"
   spec.summary      = "AmuseGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = "11.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.2.5" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.2.6" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -31,6 +31,11 @@ Pod::Spec.new do |spec|
   spec.subspec 'Core' do |cr|
       cr.vendored_framework = 'SDK/AmuseGameSDK/Core/AmuseGameSDK.framework'
       cr.resources = 'SDK/AmuseGameSDK/Core/TTkGame.bundle','SDK/AmuseGameSDK/Core/TTGCProgressHUD.bundle'
+  end
+
+  spec.subspec 'CustomUI' do |cu|
+      cu.dependency 'IQKeyboardManager'
+      cu.dependency 'AmuseGameSDK/Core'
   end
   
   spec.subspec 'Facebook' do |fb|

@@ -21,6 +21,7 @@ typedef NS_ENUM(NSInteger, TTGCLoginType) {
     TTGCLoginType_Twitter          = 6,             // Twitter user
     TTGCLoginType_Botim            = 7,             // Botim user
     TTGCLoginType_Google           = 8,             // Google user
+    TTGCLoginType_Custom           = 9,             // custom user
 };
 
 NS_ASSUME_NONNULL_BEGIN
@@ -32,6 +33,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *thirdUid; //third-party uid
 @property (nonatomic, copy) NSString *accessToken; //TTkGame authorization token
 @property (nonatomic, copy) NSString *nickname; //nick name
+@property (nonatomic, copy) NSString *openId; //custom name
 @property (nonatomic, copy) NSString *photoUrl; //photo
 @property (nonatomic, copy) NSString *pushOff;
 

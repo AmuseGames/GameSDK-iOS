@@ -40,6 +40,11 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Login
 
 /**
+ Login with UI
+ */
+- (void)loginWithCustomUICompletion:(TTGCUserCompletionHandler)completion;
+
+/**
  Login User Type
  */
 - (TTGCLoginType)loginType;

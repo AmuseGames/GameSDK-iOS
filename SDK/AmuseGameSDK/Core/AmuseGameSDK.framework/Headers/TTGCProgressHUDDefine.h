@@ -19,7 +19,7 @@
 #define SETUP_TTGCHUD   {\
 [TTGCProgressHUD setMinimumDismissTimeInterval:1.5];\
 [TTGCProgressHUD setDefaultStyle:TTGCProgressHUDStyleCustom];\
-[TTGCProgressHUD setBackgroundColor:[UIColor groupTableViewBackgroundColor]];\
+[TTGCProgressHUD setBackgroundColor:[UIColor colorWithRed:(240/255.0) green:(240/255.0) blue:(240/255.0) alpha:1]];\
 [TTGCProgressHUD setDefaultMaskType:TTGCProgressHUDMaskTypeClear];\
 }
 
