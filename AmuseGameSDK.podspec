@@ -30,7 +30,7 @@ Pod::Spec.new do |spec|
     
   spec.subspec 'Core' do |cr|
       cr.vendored_framework = 'SDK/AmuseGameSDK/Core/AmuseGameSDK.framework'
-      cr.resources = 'SDK/AmuseGameSDK/Core/TTkGame.bundle','SDK/AmuseGameSDK/Core/TTGCProgressHUD.bundle'
+      cr.resources = 'SDK/AmuseGameSDK/Core/G_ICON_B.bundle','SDK/AmuseGameSDK/Core/G_ICON_ProgressHUD.bundle','SDK/AmuseGameSDK/Core/DACON.bundle'
   end
 
   spec.subspec 'CustomUI' do |cu|
