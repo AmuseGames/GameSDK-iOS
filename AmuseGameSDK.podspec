@@ -1,7 +1,7 @@
 Pod::Spec.new do |spec|
 
   spec.name         = "AmuseGameSDK"
-  spec.version      = "2.2.6"
+  spec.version      = "2.2.7"
   spec.summary      = "AmuseGame SDK for games"
   
   spec.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = "11.0"
   
-  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.2.6" }
+  spec.source       = { :git => "https://github.com/AmuseGames/GameSDK-iOS.git", :tag => "2.2.7" }
 
   spec.requires_arc = true
   spec.pod_target_xcconfig = { 'OTHER_LDFLAGS' => '-lObjC' }
@@ -60,7 +60,7 @@ Pod::Spec.new do |spec|
       analy.dependency 'Firebase/Analytics'
       analy.dependency 'Firebase/DynamicLinks'
       analy.dependency 'Firebase/Auth'
-      analy.dependency 'GoogleSignIn'
+      analy.dependency 'GoogleSignIn', '~> 6.2.2'
       analy.dependency 'AmuseGameSDK/Core'
   end
   
